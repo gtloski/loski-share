@@ -6,4 +6,6 @@
 	
 ### 访问地址：http://localhost:8080/share/main/login.html
 
-### 2017.8.31——项目基础框架Spring,Spring MVC,MyBatis的集成和项目的github上传。登陆界面的绘制
+|日期	       | 事件	     |
+| ------------- |:-------------:|
+| 2017.8.31      | 项目基础框架Spring,Spring MVC,MyBatis的集成和项目的github上传。登陆界面的绘制 |
