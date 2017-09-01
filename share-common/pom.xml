@@ -272,5 +272,16 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.8.9</version>
 		</dependency>
+		<dependency>  
+	  		<groupId>ro.isdc.wro4j</groupId>  
+	  		<artifactId>wro4j-core</artifactId>  
+	  		<version>1.8.0</version>
+	  		<exclusions>
+			    <exclusion>
+				     <groupId>org.slf4j</groupId>
+				     <artifactId>slf4j-api</artifactId>
+			    </exclusion>
+		   </exclusions>
+	 	</dependency> 
 	</dependencies>
 </project>

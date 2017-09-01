@@ -53,6 +53,19 @@
 	</servlet-mapping>
 <!-- 	spring mvc  DispatcherServlet 结束-->
 	
+<!-- 	wro4j -->
+	<filter>
+		<filter-name>WebResourceOptimizer</filter-name>
+		<filter-class>ro.isdc.wro.http.WroFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>WebResourceOptimizer</filter-name>
+		<url-pattern>/wro/*</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+<!-- 	wro4j -->
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

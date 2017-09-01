@@ -4,16 +4,12 @@
 <head>
 <title>Clouds</title>
 <meta charset="utf-8" />
-
-<link rel="stylesheet" href="/statics/textillate/css/textillate.css" />
-<link rel="stylesheet" href="/statics/textillate/css/style.css" />
-
-<link rel="stylesheet" href="/statics/cloud/css/cloud.css" />
-<script src="http://cdn.staticfile.org/jquery/1.9.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/wro/com.loski.share.cloud.css" />
+<script type="text/javascript" src="/wro/com.loski.share.cloud.js"></script>
 </head>
 <body>
 	<div class="page-container">
-		<h1 class="glow in tlt" id = "login-title">登录</h1>
+		<h1>登录</h1>
 		<form action="login" method="post">
 			<div style="text-align: center; color: red"></div>
 			<div>
@@ -29,8 +25,6 @@
 		</form>
 	</div>
 
-	<script type="text/javascript" src="/statics/cloud/js/ga.js"></script>
-
 	<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-86951-7']);
@@ -41,13 +35,7 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
 		  })();
-		</script>
-
-	<script type="text/javascript" src="/statics/cloud/js/ThreeWebGL.js"></script>
-	<script type="text/javascript" src="/statics/cloud/js/ThreeExtras.js"></script>
-	<script type="text/javascript" src="/statics/cloud/js/Detector.js"></script>
-	<script type="text/javascript" src="/statics/cloud/js/RequestAnimationFrame.js"></script>
-
+	</script>
 	<script id="vs" type="x-shader/x-vertex">
 		varying vec2 vUv; 
 		void main(){ 
@@ -61,14 +49,6 @@
 			uniform sampler2D map; uniform vec3 fogColor; uniform float fogNear; uniform float fogFar; varying vec2 vUv; void main() { float depth = gl_FragCoord.z / gl_FragCoord.w; float fogFactor = smoothstep( fogNear, fogFar, depth ); gl_FragColor = texture2D( map, vUv ); gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 ); gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor ); }
 
 	</script>
-	
-	<script type="text/javascript" src="/statics/cloud/js/cloud.js"></script>
-	
-
-	<script src="/statics/textillate/js/jquery.fittext.js"></script>
-	<script src="/statics/textillate/js/jquery.lettering.js"></script>
-	<script src="/statics/textillate/js/highlight.min.js"></script>
-	<script src="/statics/textillate/js/jquery.textillate.js"></script>
 </body>
 
 </html>
