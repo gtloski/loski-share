@@ -28,7 +28,8 @@
 			</list>
 		</property>
 	</bean>
-	
+<!-- 	http://www.cnblogs.com/lannoy/p/5772960.html -->
+<!-- 	http://www.cnblogs.com/soundcode/p/6483844.html -->
 	<bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
 		<property name="slowSqlMillis" value="1000" />
 		<property name="logSlowSql" value="true" />
@@ -43,7 +44,7 @@
 	<bean id="wall-filter-config" class="com.alibaba.druid.wall.WallConfig">
 		<property name="multiStatementAllow" value="true" />
 	</bean>
-
+<!-- 	https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_Druid%E5%92%8CSpring%E5%85%B3%E8%81%94%E7%9B%91%E6%8E%A7%E9%85%8D%E7%BD%AE -->
 	<bean id="druid-stat-interceptor" class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor"></bean>
 	<bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
 		<property name="patterns">
@@ -58,20 +59,15 @@
 		<aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut"/>
 	</aop:config>
 	
-	<bean id="transactionManager"
-		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
-	</bean>
-
+<!-- 	mybatis核心配置文件的加载和mapper的注册 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<property name="mapperLocations" value="classpath:/mapping/*-mapper.xml" />
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-
+<!-- 	mybatis接口的扫描 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.loski.share.*.persistence" />
 	</bean>
+<!-- 	mybatis相关配置 -->
 </beans>
