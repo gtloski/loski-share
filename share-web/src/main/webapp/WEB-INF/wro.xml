@@ -2,12 +2,17 @@
 <groups xmlns="http://www.isdc.ro/wro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
 	
-	<group name = "com.loski.share.common">
+	<group name = "com.loski.share.common.jquery">
 		<js>/statics/common/js/jquery1.11.min.js</js>
 	</group>
 	
+	<group name = "com.loski.share.common.bootstrap">
+		<group-ref>com.loski.share.common.jquery</group-ref>
+		<css>/statics/common/bootstrap/css/bootstrap.css</css>
+		<css>/statics/common/bootstrap/js/bootstrap.js</css>
+	</group>
+	
 	<group name = "com.loski.share.textillate">
-		<group-ref>com.loski.share.common</group-ref>
 		<css>/statics/textillate/css/textillate.css</css>
 		<js>/statics/textillate/js/jquery.fittext.js</js>
 		<js>/statics/textillate/js/jquery.lettering.js</js>
@@ -16,7 +21,6 @@
 	</group>
 	
 	<group name = "com.loski.share.cloud">
-		<group-ref>com.loski.share.common</group-ref>
 		<css>/statics/cloud/css/cloud.css</css>
 		<js>/statics/cloud/js/ga.js</js>
 		<js>/statics/cloud/js/ThreeWebGL.js</js>
