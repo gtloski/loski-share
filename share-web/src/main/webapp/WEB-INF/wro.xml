@@ -30,4 +30,26 @@
 		<js>/statics/cloud/js/cloud.js</js>
 	</group>
 	
+<!--     百度ueditor 开始-->
+	<group name="com.loski.share.ueditor">
+		<css>/statics/ueditor/css/ueditor.css</css>
+        <js>/statics/ueditor/js/ueditor.config.js</js>
+        <js>/statics/ueditor/js/ueditor.all.js</js>
+        <js>/statics/ueditor/js/lang/zh-cn/zh-cn.js</js>
+    </group>
+    <group name="com.loski.share.ueditor.iframe.zeroclipboard">
+    	<js>/statics/ueditor/js/third-party/zeroclipboard/ZeroClipboard.min.js</js>
+    </group>
+    <group name="com.loski.share.ueditor.iframe">
+    	<css>/statics/ueditor/css/ueditor/iframe.css</css>
+    </group>
+    <group name="com.loski.share.ueditor.parse">
+    	<js>/statics/ueditor/js/ueditor/ueditor.parse.js</js>
+    </group>
+    <group name="com.loski.share.ueditor.codemirror">
+    	<css>/statics/ueditor/css/codemirror.css</css>
+		<js>/statics/ueditor/js/third-party/codemirror/codemirror.js</js>
+    </group>
+<!--     百度ueditor 结束-->
+	
 </groups>	

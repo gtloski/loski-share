@@ -16,4 +16,9 @@ public class PageController {
 	public String commonPage(@PathVariable("url") String url){
 		return "/share/main/common/" + url + ".html";
 	}
+	
+	@RequestMapping("/share/common/ueditor/{url}.html")
+	public String ueditorPage(@PathVariable("url") String url){
+		return "/share/common/ueditor/" + url + ".html";
+	}
 }
