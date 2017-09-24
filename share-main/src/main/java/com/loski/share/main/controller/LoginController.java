@@ -14,13 +14,12 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 	
-	@RequestMapping(value = "/share/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/share/main/common/login", method = RequestMethod.POST)
 	public String login(@RequestParam("name") String name, @RequestParam("password") String password){
 
 		if(loginService.login(name, password)){
-			return "share/success.html";
+			return "share/main/common/success.html";
 		}
-		
-		return "share/fail.html";
+		return "share/main/common/fail.html";
 	}
 }
