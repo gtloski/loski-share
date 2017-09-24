@@ -11,3 +11,4 @@
 | 2017.8.31      | 项目基础框架Spring,Spring MVC,MyBatis的集成和项目的github上传。登陆界面的绘制 |
 | 2017.9.1	| 添加wro4j插件和bootstrap |
 | 2017.9.6	| 添加百度ueditor编辑器 |
+| 2017.9.24	| quartz和redis工程	
