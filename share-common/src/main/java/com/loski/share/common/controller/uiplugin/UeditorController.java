@@ -24,7 +24,7 @@ public class UeditorController {
 	            IOUtils.copy(UeditorController.class.getClassLoader().getResourceAsStream("config.json"), os);    
 	        }  
 		} catch (Exception e) {
-			logger.info("ueditor config º”‘ÿ ß∞‹£°");
+			logger.info("ueditor config Âä†ËΩΩÂ§±Ë¥•");
 		}
 	}
 }
