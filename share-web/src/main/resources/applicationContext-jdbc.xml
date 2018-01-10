@@ -66,8 +66,9 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 <!-- 	mybatis接口的扫描 -->
-	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.loski.share.*.persistence" />
+		<property name="markerInterface" value="tk.mybatis.mapper.common.Mapper"/>
 	</bean>
 <!-- 	mybatis相关配置 -->
 </beans>

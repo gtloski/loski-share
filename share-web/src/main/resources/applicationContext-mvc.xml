@@ -23,9 +23,8 @@
 	
 <!-- 	以下两个的学习地址		http://www.cnblogs.com/hujingwei/p/5349983.html -->
 	<mvc:default-servlet-handler />
-		
-	<mvc:annotation-driven />
 	
+	<mvc:annotation-driven />
 	
 <!-- 	视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

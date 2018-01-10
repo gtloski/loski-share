@@ -3,13 +3,14 @@
 	xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
 	
 	<group name = "com.loski.share.common.jquery">
-		<js>/statics/common/js/jquery1.11.min.js</js>
+		<js>/statics/common/jquery/js/jquery1.11.min.js</js>
 	</group>
 	
 	<group name = "com.loski.share.common.bootstrap">
 		<group-ref>com.loski.share.common.jquery</group-ref>
 		<css>/statics/common/bootstrap/css/bootstrap.css</css>
-		<css>/statics/common/bootstrap/js/bootstrap.js</css>
+		<css>/statics/common/bootstrap/css/font-awesome.min.css</css>
+		<js>/statics/common/bootstrap/js/bootstrap.js</js>
 	</group>
 	
 	<group name = "com.loski.share.textillate">
@@ -51,5 +52,29 @@
 		<js>/statics/ueditor/js/third-party/codemirror/codemirror.js</js>
     </group>
 <!--     百度ueditor 结束-->
+
+	<group name="com.loski.share.jqgrid">
+		<css>/statics/common/jqgrid/ui.jqgrid-bootstrap.css</css>
+		<js>/statics/common/jqgrid/grid.locale-cn.js</js>
+		<js>/statics/common/jqgrid/jquery.jqGrid.min.js</js>
+	</group>
+
+	<group name = "com.loski.share.admin.usermanage">
+		<js>/statics/admin/usermanage.js</js>
+	</group>
 	
+	<!-- vue.js -->
+	<group name = "com.loski.share.vue">
+		<js>/statics/common/vue/vue.min.js</js>
+	</group>
+	
+	<group name = "com.loski.share.common">
+		<js>/statics/common/js/common.js</js>
+		<css>/statics/common/css/main.css</css>
+	</group>
+	
+	<group name = "com.loski.share.layer">
+		<js>/statics/common/layer/layer.js</js>
+		<css>/statics/common/layer/skin/default/layer.css</css>
+	</group>
 </groups>	

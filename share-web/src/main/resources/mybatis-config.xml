@@ -10,8 +10,7 @@
 	</settings>
 
 <!-- 	<plugins> -->
-<!-- 		<plugin interceptor="com.github.pagehelper.PageHelper"> -->
-<!-- 			<property name="dialect" value="mysql" /> -->
+<!-- 		<plugin interceptor="com.github.pagehelper.PageInterceptor"> -->
 <!-- 			<property name="offsetAsPageNum" value="true" /> -->
 <!-- 			<property name="rowBoundsWithCount" value="true" /> -->
 <!-- 			<property name="pageSizeZero" value="true" /> -->
@@ -19,7 +18,7 @@
 <!-- 			<property name="params" value="pageNum=start;pageSize=limit;" /> -->
 <!-- 		</plugin> -->
 
-<!-- 		<plugin interceptor="tk.mybatis.mapper.mapperhelper.MapperInterceptor"> -->
+<!-- 		<plugin interceptor="tk.mybatis.mapper.mapperhelper.MapperHelper"> -->
 <!-- 			<property name="IDENTITY" value="HSQLDB" /> -->
 <!-- 			<property name="seqFormat" value="{0}.nextval" /> -->
 <!-- 			<property name="mappers" value="tk.mybatis.mapper.common.Mapper" /> -->
